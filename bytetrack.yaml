@@ -1,0 +1,8 @@
+tracker_type: bytetrack # tracker type, ['botsort', 'bytetrack']
+track_high_thresh: 0.15 # Ngưỡng xác suất phát hiện để gán đối tượng vào track hiện có. Tăng giá trị này giúp giảm lỗi gán nhầm.
+track_low_thresh: 0.05 # Ngưỡng xác suất tối thiểu để giữ lại một phát hiện. Giảm giá trị này giúp giữ lại các đối tượng có độ tin cậy thấp.
+new_track_thresh: 0.15 # tNgưỡng xác suất để khởi tạo một track mới nếu không khớp với track hiện tại.
+track_buffer: 50 # Số khung hình (frames) trước khi một track bị loại bỏ nếu không có phát hiện mới.
+match_thresh: 0.6 # Ngưỡng IOU để ghép các track với phát hiện mới. Giảm giá trị này nếu có nhiều đối tượng di chuyển gần nhau.
+fuse_score: True # Kết hợp điểm tin cậy với IOU để cải thiện ghép nối
+# min_box_area: 10  # threshold for min box areas(for tracker evaluation, not used for now)
